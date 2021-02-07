@@ -1,0 +1,28 @@
+.mainnet {
+  background-color: #538f8f;
+  border: 2px solid teal;
+  border-radius: 99999px;
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  /* filter: invert(1); */
+}
+
+.mainnet * {
+  filter: invert(1);
+}
+
+.testnet {
+  background-color: #ffc65d;
+  border: 2px solid orange;
+  border-radius: 99999px;
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}

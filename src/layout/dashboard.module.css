@@ -1,0 +1,16 @@
+.aside {
+  background-color: var(--color-gray);
+  box-shadow: rgba(0, 0, 0, 0.1) 3px 0px 10px;
+  border-right: 2px solid #fff;
+  max-width: 280;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  transition: all 0.5s;
+  overflow: hidden;
+  text-align: left;
+  width: 70px;
+  width: 220px;
+  order: 1;
+  z-index: 200;
+}

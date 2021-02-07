@@ -1,0 +1,90 @@
+.tableContainer {
+  position: relative;
+}
+.table {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 6px 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .table tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+  }
+  .table tr td {
+    padding: 5px 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/* ---------------- */
+/* Table Head       */
+/* ---------------- */
+.tableHead {
+  background-color: #36304a;
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #abbaab,
+    #ffffff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #f5f5f5,
+    #f5f5f5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px 10px 0 0;
+  /* background-color: var(--color-gray); */
+  border: 1px solid var(--color-solitude);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.tableHead tr th {
+  padding: 22px 0;
+}
+
+.tableHead th {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+.tableHead tr th {
+  text-align: left;
+}
+
+.tableHead tr th:nth-of-type(1) {
+  padding-left: 10px;
+}
+
+/* ---------------- */
+/* Table Body       */
+/* ---------------- */
+@media screen and (min-width: 992px) {
+  .tableBody tr {
+    height: 50px;
+    width: 100%;
+  }
+
+  .tableBody tr td {
+    vertical-align: middle;
+  }
+
+  .tableBody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  .tableBody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+}

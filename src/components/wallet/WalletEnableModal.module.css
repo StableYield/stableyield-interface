@@ -1,0 +1,61 @@
+.container {
+  background-color: #fff;
+  border: 1px solid var(--color-solitude);
+  border-radius: 8px;
+  padding: 18px;
+  padding: 20px;
+  min-width: 480px;
+  max-width: 100%;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid var(--color-solitude);
+  border-radius: 4px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+.headerActive {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.main {
+  padding: 18px;
+}
+.footer {
+  border-top: 1px solid var(--color-solitude);
+  border-radius: 4px;
+  padding-top: 18px;
+  margin-top: 18px;
+}
+
+.blockie {
+  border: 2px solid var(--color-solitude);
+  border-radius: 99999px;
+  margin-right: 10px;
+}
+
+.walletActiveButton {
+  display: flex;
+  align-items: center;
+}
+
+.walletActiveButton .blockieActive {
+  border: 2px solid var(--color-solitude);
+  border-radius: 99999px;
+  margin-left: 10px;
+}
+
+.walletOption {
+  background-color: #fff;
+  border: 1px solid var(--color-solitude);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 18px;
+}

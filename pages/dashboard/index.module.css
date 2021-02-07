@@ -1,0 +1,80 @@
+.optionsContainer {
+  background: #1e3c72; /* fallback for old browsers */
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #e9e9e9,
+    #eeeeee,
+    #e9e9e9,
+    #ffffff
+  );
+  animation: 5s linear 0s infinite normal none running rotate;
+  background-size: 400% 400%;
+  -webkit-animation: backgroundAnimate 30s ease infinite;
+  -moz-animation: backgroundAnimate 30s ease infinite;
+  animation: backgroundAnimate 30s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.optionsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 890px;
+  max-width: 890px;
+}
+
+.optionsItem {
+  background-color: #fff;
+  border: 2px solid var(--color-solitude);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 10px;
+  border-radius: 8px;
+  padding: 18px;
+  max-width: 30%;
+  margin-bottom: 20px;
+  width: 30%;
+  /* text-align: center; */
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.optionsItem:hover {
+  transform: scale(1.025);
+}
+
+@-webkit-keyframes backgroundAnimate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes backgroundAnimate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes backgroundAnimate {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

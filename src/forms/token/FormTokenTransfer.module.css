@@ -1,0 +1,71 @@
+.form {
+  padding: 25px;
+}
+.form input {
+  display: block;
+  border: 1px solid var(--color-solitude);
+  font-size: 14px;
+  margin-bottom: 10px;
+  min-height: 45px;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+}
+
+.label {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-solitude);
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  width: 100%;
+}
+
+.inputHorizonal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputHorizonal input {
+  max-width: 48%;
+}
+
+.inputHorizonal input::placeholder {
+  font-size: 12px;
+}
+
+.form button {
+  display: block;
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-solitude);
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 15px;
+  min-height: 45px;
+  width: 100%;
+  transition: "all 0.2s";
+  position: relative;
+  top: 0;
+}
+
+.form button:hover {
+  top: -1px;
+}
+.form button:active {
+  top: 1px;
+}
+
+.setActiveAccount {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.reset {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+}

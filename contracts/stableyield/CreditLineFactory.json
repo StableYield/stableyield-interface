@@ -1,0 +1,238 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "int16",
+        "name": "_type",
+        "type": "int16"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_manager",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_assetToDeposit",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amountToDeposit",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_assetToBorrow",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_amountToBorrow",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_interestRateMode",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_creditLineLength",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "int16",
+        "name": "_creditLineTimelineType",
+        "type": "int16"
+      }
+    ],
+    "name": "CreditLineCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "_ilk",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "LoanManagerClosed",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_assetToDeposit",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountToDeposit",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_assetToBorrow",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountToBorrow",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_interestRateMode",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_creditLineLength",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int16",
+        "name": "_creditLineTimelineType",
+        "type": "int16"
+      }
+    ],
+    "name": "createCreditLineERC20",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address payable",
+        "name": "_borrower",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_assetToDeposit",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_collateralId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "_assetToBorrow",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amountToBorrow",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_interestRateMode",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_creditLineLength",
+        "type": "uint256"
+      },
+      {
+        "internalType": "int16",
+        "name": "_creditLineTimelineType",
+        "type": "int16"
+      }
+    ],
+    "name": "createCreditLineERC721",
+    "outputs": [],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "creditLines",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getCreditLineCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getLastCreditLine",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "stateMutability": "payable",
+    "type": "receive"
+  }
+]

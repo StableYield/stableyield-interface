@@ -1,0 +1,24 @@
+/* Label */
+.menuContainer .categoryLabel {
+  transition: opacity 0s;
+}
+
+/* Image */
+.menuContainer .categoryImage {
+  margin-right: 10px;
+}
+
+.imageLabelContainer {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Child Item List */
+.menuContainer .childItemsList {
+  transition: all 0s;
+}
+
+.childItem {
+  display: block;
+}

@@ -1,0 +1,36 @@
+.container {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid var(--color-solitude);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 10px;
+  display: flex;
+  /* justify-content: space-between; */
+  /* margin-bottom: 30px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.statistic {
+  margin-right: 35px;
+}
+
+.statisticValue {
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.statisticLabelContainer {
+  display: flex;
+  align-items: center;
+}
+.statisticLabel {
+  font-weight: 500;
+  font-size: 14px;
+}
+.statisticLabelImage {
+  margin-right: 10px;
+}
